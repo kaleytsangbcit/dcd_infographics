@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overfishing Infographics</title>
+<html>
+    <head>
+        <title>Overfishing Infographics</title>
+        <script src="comps/banner.js"></script>       
+        <script src="comps/boat.js"></script>
+        <script src="comps/waves.js"></script>
+        <style>
+            body {
+                margin:0;
+                min-height: 3000px;
+                min-width:428px;
+                background-image: url('img/background_clean.png');
+                background-size:100%;
+                background-repeat: no-repeat;
+            }
+
+            #title {
+                top:800px;
+                left: 200px;
+                height: 200px;
+            }
+
+/* 
+            #fishing_boat {
+
+            } */
+
+        </style>
 </head>
+
 <body>
-    Overfishing Kaley's branch testing 2
+
+    <div id="title">
+        <the-banner
+        img="img/Banner_process.png"
+        ></the-banner>
+    </div>
+
+    <div id="fishing_boat">
+        <the-boat
+        img="img/FishingBoat.png"
+        ></the-boat>
+    </div>
+
+    <div id="waves">
+        <the-waves
+        img="img/Waves.png"
+        ></the-waves>
+    </div>
+
 </body>
+
 </html>
