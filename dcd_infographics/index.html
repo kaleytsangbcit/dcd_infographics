@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Overfishing Infographics</title>
-        <script src="comps/banner.js"></script>       
+        <script src="comps/banner.js"></script>
+        <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
         <script src="comps/waves.js"></script>
         <style>
@@ -12,6 +13,7 @@
                 background-image: url('img/background_clean.png');
                 background-size:100%;
                 background-repeat: no-repeat;
+                width:428px;
             }
 
             #title {
@@ -20,10 +22,6 @@
                 height: 200px;
             }
 
-/* 
-            #fishing_boat {
-
-            } */
 
         </style>
 </head>
@@ -36,16 +34,23 @@
         ></the-banner>
     </div>
 
-    <div id="fishing_boat">
-        <the-boat
-        img="img/FishingBoat.png"
-        ></the-boat>
+    <div id="clouds">
+        <the-clouds
+        img="img/Cloud.png"
+        img="img/Cloud_2.png"
+        ></the-clouds>
     </div>
 
     <div id="waves">
         <the-waves
         img="img/Waves.png"
         ></the-waves>
+    </div>
+
+    <div id="fishing_boat">
+        <the-boat
+        img="img/FishingBoat.png"
+        ></the-boat>
     </div>
 
 </body>

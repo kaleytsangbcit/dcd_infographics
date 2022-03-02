@@ -8,7 +8,6 @@ template_waves.innerHTML = `
     #waves_image {
         top:1100px;
         position: absolute;
-
     }
 
     #waves_image img {
