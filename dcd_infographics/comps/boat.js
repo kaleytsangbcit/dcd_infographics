@@ -6,10 +6,10 @@ template_boat.innerHTML = `
 
 <style>
     #boat_image {
-        top:650px;
+        top:850px;
         left: 200px;
-        height: 800px;
-        position: relative;
+        height: 850px;
+        position: absolute;
     }
 
 </style>

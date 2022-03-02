@@ -6,7 +6,7 @@ template_banner.innerHTML = `
 
 <style>
     #banner_image {
-        top: 300px;
+        top: 150px;
         display:flex;
         justify-content: center;
         position: absolute;
