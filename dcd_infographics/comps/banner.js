@@ -6,14 +6,12 @@ template_banner.innerHTML = `
 
 <style>
     #banner_image {
-        top: 150px;
-        display:flex;
-        justify-content: center;
-        position: absolute;
+        margin: 100px auto;
+        width: 80%;
     }
 
     #banner_image img {
-        width: 80%;
+        width: 100%;
     }
 
 </style>
