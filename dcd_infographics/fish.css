@@ -1,0 +1,92 @@
+
+#coral1 {
+    position: relative;
+    top: 5800px;
+
+}
+
+the-fish {
+    position: absolute;  
+}
+
+#gray {
+    top: 5500px;
+    left: 500px;
+
+    
+}
+.gray {
+    position: absolute;
+    transform: none;
+    animation: leftMoving 4s linear infinite;
+    animation-direction: alternate;
+    transform: scaleX(-1);
+}
+@keyframes leftMoving {
+    0%   {left: 10px; top: 5200px;}
+    50%  {left: 700px; top: 5200px;}
+    100% {left: 10px; top: 5200px;}
+    
+}
+
+#black {
+    position: absolute;
+    transform: none;
+    animation: rightMoving 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rightMoving {
+    0%   {right: 10px; top: 5400px;}
+    50%  {right: 600px; top: 5400px;}
+    100% {right: 10px; top: 5400px;}
+}
+
+#green {
+
+    position: absolute;
+    transform: none;
+    animation: rightMoving1 5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes rightMoving1 {
+    0%   {right: 10px; top: 5600px;}
+    50%  {right: 600px; top: 5600px;}
+    100% {right: 10px; top: 5600px;}
+}
+
+#orange {
+    position: absolute;
+    transform: none;
+    animation: rightMoving2 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes rightMoving2 {
+    0%   {right: 10px; top: 5300px;}
+    50%  {right: 700px; top: 5300px;}
+    100% {right: 10px; top: 5300px;}
+}
+#brown {
+    position: absolute;
+    transform: none;
+    animation: leftMoving2  3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes leftMoving2 {
+    0%   {left: 10px; top: 6000px;}
+    50%  {left: 700px; top: 6000px;}
+    100% {left: 10px; top: 6000px;}
+}
+#shark {
+    position: absolute;
+    transform: none;
+    animation: leftMoving1  4s linear infinite;
+    animation-direction: alternate;
+    transform: scaleX(-1);
+}
+@keyframes leftMoving1 {
+    0%   {left: 10px; top: 5800px;}
+    50%  {left: 450px; top: 5800px;}
+    100% {left: 10px; top: 5800px;}
+}
+
