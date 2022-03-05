@@ -5,9 +5,7 @@ var template_clouds = document.createElement("template"); //<template> </templat
 template_clouds.innerHTML = `
 
 <style>
-    #clouds_image_1,
-    #clouds_image_2 {
-    } 
+
 
     #clouds_image_1 {
         position: absolute;
@@ -25,7 +23,7 @@ template_clouds.innerHTML = `
     #clouds_image_2 {
         position: absolute;
         transform: none;
-        animation: rightMoving 3.5s linear infinite;
+        animation: rightMoving 5s linear infinite;
         animation-direction: alternate;
       }
 
