@@ -1,0 +1,78 @@
+
+#coral1 {
+    position: relative;
+    top: 5800px;
+
+}
+
+the-fish {
+    position: absolute;  
+}
+
+#gray {
+    position: absolute;
+    transform: none;
+    animation: topBottom 6s linear;
+    animation-direction: alternate;
+    transform: scaleY(-1);
+    animation-fill-mode: forwards;
+}
+@keyframes topBottom {
+    from {left:130px; top:1000px;}
+    to {left: 130px; top: 1700px;}
+    
+}
+
+#gray2 {
+    position: absolute;
+    transform: none;
+    animation: topBottom2 6s linear;
+    animation-direction: alternate;
+    transform: scaleY(-1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes topBottom2 {
+    from {left:250px; top:1000px;}
+    to {left: 500px; top: 1700px;}
+}
+
+#orange {
+    position: absolute;
+    transform: none;
+    animation: topBottom3 6s linear;
+    animation-direction: alternate;
+    transform: scaleY(-1);
+    animation-fill-mode: forwards;
+}
+@keyframes topBottom3 {
+    from {left:450px; top:1000px;}
+    to {left: 600px; top: 1400px;}
+}
+
+#gray3{
+    position: absolute;
+    transform: none;
+    animation: topBottom4 6s linear;
+    animation-direction: alternate;
+    transform: scaleY(-1);
+    animation-fill-mode: forwards;
+}
+@keyframes topBottom4  {
+    from {left:150px; top:1000px;}
+    to {left: 200px; top: 1400px;}
+}
+
+#shark {
+    position: absolute;
+    transform: none;
+    animation: topBottom3 5s linear;
+    animation-direction: alternate;
+    transform: scaleY(-1);
+    animation-fill-mode: forwards;
+}
+@keyframes topBottom3 {
+    from {left:200px; top:1000px;}
+    to {left: 250px; top: 1800px;}
+}
+
