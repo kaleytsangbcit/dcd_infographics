@@ -13,16 +13,25 @@ template_net.innerHTML = `
     // }   
 
     #net_image {
-        left: 130px;
-        top:5000px;
         position: absolute;
+        transform: none;
+        top: 2000px;
+        left: 150px;
+        animation: Movingup 10s linear 1;
+        animation-direction: alternate;
+      }
+
+      @keyframes Movingup {
+        0%   {top: 6000px;}
+        100% {top: 2000px;}
     }
+
 
 </style>
 
 <div id='net_cont'>
     <div id='net_image'>
-            <img id='net' src='/img/Net.png'/>
+            <img id='net' src='/img/Net_with_Fish.png'/>
     </div>
 </div>
 `;
@@ -42,20 +51,22 @@ class TheNet extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_net.content.cloneNode(true)); //use the template to make a clone
 
-    if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#net_image > img").src = this.getAttribute("img");
-        $(window).on("load resize scroll") = () => this.HandleNet();
+        if(this.getAttribute("img")){
+            this.shadowRoot.querySelector("#net_image > img").src = this.getAttribute("img");
         }
-    }
+    
+    // $(window).onsrcoll = () => this.HandleNet();
+
+    // }
 
     
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-        HandleNet(){
-             this.shadowRoot.querySelector("#net_image").style.cssText = `
-                top:500px;
-            `
-            }
+        // HandleNet(){
+        //      this.shadowRoot.querySelector("#net_image").style.cssText = `
+        //         top:500px;
+        //     `
+        //     }
     
         // $(window).on("load resize scroll", function() {
         //     $("#net_image").each(function() {
@@ -67,8 +78,9 @@ class TheNet extends HTMLElement {
         //           .css({ left: leftPosition });
         //     });
         //   });
-        // }
+        }
     }
+
 
 //MUST HAVE - define the tag for the custom elements
 customElements.define("the-net", TheNet)
