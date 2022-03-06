@@ -6,8 +6,17 @@ template_waves.innerHTML = `
 
 <style>
     #waves_image {
-        top:1100px;
+        top:1080px;
         position: absolute;
+        transform: none;
+        animation: waves 10s linear infinite;
+        animation-direction: infinite;
+      }
+
+      @keyframes waves {
+        0%   {left: -100px;}
+        50%  {left: 0px;}
+        100% {left: -100px;}
     }
 
     #waves_image img {
