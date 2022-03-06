@@ -1,29 +1,17 @@
 //MUST HAVE - CREATE A TEMPLATE TAG
-var template_banner = document.createElement("template"); //<template> </template> RULE
+var template_fish = document.createElement("template"); //<template> </template> RULE
 
 //To-do - CREATE THE UI HERE!
-template_banner.innerHTML = `
+template_fish.innerHTML = `
 
-<style>
-    #banner_image {
-        margin: 100px auto;
-        width: 80%;
-    }
-
-    #banner_image img {
-        width: 100%;
-    }
-
-</style>
-
-
-<div id='banner_image'>
-        <img id='banner' src='/img/Banner_process.png'/>
+<div id='fish_image'>
+        <img id='fish' src='/img/Fish_Black.png'/>
 </div>
+
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
-class TheBanner extends HTMLElement {
+class TheFish extends HTMLElement {
 
     //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
     constructor(){
@@ -35,15 +23,16 @@ class TheBanner extends HTMLElement {
 
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
-        this.shadowRoot.appendChild(template_banner.content.cloneNode(true)); //use the template to make a clone
+        this.shadowRoot.appendChild(template_fish.content.cloneNode(true)); //use the template to make a clone
 
     if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#banner > img").src = this.getAttribute("img");
+        this.shadowRoot.querySelector("#fish_image > img").src = this.getAttribute("img");
         }
+    
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
 }
 
 //MUST HAVE - define the tag for the custom elements
-customElements.define("the-banner", TheBanner)
+customElements.define("the-fish", TheFish)
