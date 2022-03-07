@@ -45,14 +45,32 @@ template_net.innerHTML = `
     }
 
 
+
+    #net_popup {
+        position: absolute;
+        opacity: 0%;
+        top: 6100px;
+        left: 60px;
+        animation: PopUp 10s linear 1 forwards;
+        animation-delay: 2s;
+      }
+
+      @keyframes PopUp {
+        0%   {top: 6100px;}
+        100% {top: 2200px;}
+    }   
+
+
 </style>
 
-<div id='net_cont'>
     <div id='net_image'>
             <img id='net' src='/img/Net_with_Fish.png'/>
     </div>
     <div id ='string'></div>
-</div>
+    <div id ='net_popup'>
+        <img id='popup' src='/img/Popup_net.png'/>
+    <div>
+
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
@@ -73,12 +91,14 @@ class TheNet extends HTMLElement {
         if(this.getAttribute("img")){
             this.shadowRoot.querySelector("#net_image > img").src = this.getAttribute("img");
         }
+
+        this.shadowRoot.querySelector("#net_image").onclick = () => this.PopUp();
+        }
     
     // $(window).onsrcoll = () => this.HandleNet();
 
     // }
 
-    
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
         // HandleNet(){
@@ -97,7 +117,9 @@ class TheNet extends HTMLElement {
         //           .css({ left: leftPosition });
         //     });
         //   });
-        }
+        PopUp(){
+            this.shadowRoot.querySelector("#net_popup").style.opacity = "90%";
+        } 
     }
 
 
