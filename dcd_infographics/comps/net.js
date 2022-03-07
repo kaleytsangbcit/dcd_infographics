@@ -15,19 +15,33 @@ template_net.innerHTML = `
     #net_image {
         position: absolute;
         transform: none;
-        top: 2000px;
+        top: 5200px;
         left: 150px;
         animation: Movingup 10s linear 1 forwards;
-        animation-direction: alternate;
-        transform: scale(1.5);
-
+        animation-delay: 2s;
       }
 
       @keyframes Movingup {
-        0%   {top: 6000px;}
-        100% {top: 1300px;
-            transform: scale(1.1);
-        }
+        0%   {top: 5200px;}
+        100% {top: 1300px;}
+    }   
+
+    #string {
+        position: absolute;
+        transform: none;
+        height:4100px;
+        width: 5px;
+        top: 1130px;
+        left: 355px;
+        content: '';
+        background: black;
+        animation: string 10s linear 1 forwards;
+        animation-delay: 2s;
+      }
+      
+    @keyframes string {
+        0%      {height: 4100px;}
+        100%    {height: 200px;} 
     }
 
 
@@ -37,6 +51,7 @@ template_net.innerHTML = `
     <div id='net_image'>
             <img id='net' src='/img/Net_with_Fish.png'/>
     </div>
+    <div id ='string'></div>
 </div>
 `;
 
