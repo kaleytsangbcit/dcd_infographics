@@ -7,19 +7,22 @@ template_string.innerHTML = `
 <style> 
 
     #string_image {
-        position: absolute;
-        transform: none;
-        top: 1000px;
+        position: absolute; 
+        top: 5000px;
         left: 350px;
-        animation: Movingup 10s linear 1;
+        animation: Movingup 10s linear 1 forwards;
         animation-direction: alternate;
+        transform: scaleY(5);
       }
 
       @keyframes Movingup {
-        0%   {top: 4000px;}
+        0%   {top: 500px;}
         100% {top: 1000px;
-                transform: scale(0, 0.7)}
+                transform-origin: top; 
+                transform: scaleY(0.2)}
     }
+
+
 
 </style>
 

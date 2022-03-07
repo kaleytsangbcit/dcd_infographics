@@ -17,13 +17,17 @@ template_net.innerHTML = `
         transform: none;
         top: 2000px;
         left: 150px;
-        animation: Movingup 10s linear 1;
+        animation: Movingup 10s linear 1 forwards;
         animation-direction: alternate;
+        transform: scale(1.5);
+
       }
 
       @keyframes Movingup {
         0%   {top: 6000px;}
-        100% {top: 2000px;}
+        100% {top: 1300px;
+            transform: scale(1.1);
+        }
     }
 
 

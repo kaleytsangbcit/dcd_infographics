@@ -82,7 +82,6 @@ the-fish {
     transform: none;
     animation: leftMoving1  4s linear infinite;
     animation-direction: alternate;
-    transform: scaleX(-1);
 }
 @keyframes leftMoving1 {
     0%   {left: 10px; top: 5800px;}
