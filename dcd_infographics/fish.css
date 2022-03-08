@@ -20,27 +20,41 @@ the-fish {
     transform: none;
     animation: leftMoving 4s linear infinite;
     animation-direction: alternate;
-    transform: scaleX(-1);
+    animation: leftToRight 40s 8s linear infinite;
+    animation: uturn 5s linear infinite;
 }
 @keyframes leftMoving {
     0%   {left: 10px; top: 5200px;}
-    50%  {left: 700px; top: 5200px;}
+    50%  {left: 500px; top: 5200px;}
     100% {left: 10px; top: 5200px;}
     
 }
-
+@keyframes uturn {
+        0% {
+          margin-left: 30%;
+          transform: none;
+        }
+        50% {
+          margin-left: 0%;
+          transform: none;
+        }
+        51% {
+          transform: rotatey(180deg);
+        }
+        100% {
+          margin-left: 30%;
+          transform: rotatey(180deg);
+        }
+      }
 #black {
     position: absolute;
     transform: none;
     animation: rightMoving 2s linear infinite;
     animation-direction: alternate;
+    animation: moveLeftTurn2 3s linear infinite;
+    top: 5400px;
 }
 
-@keyframes rightMoving {
-    0%   {right: 10px; top: 5400px;}
-    50%  {right: 600px; top: 5400px;}
-    100% {right: 10px; top: 5400px;}
-}
 
 #green {
 
@@ -48,11 +62,8 @@ the-fish {
     transform: none;
     animation: rightMoving1 5s linear infinite;
     animation-direction: alternate;
-}
-@keyframes rightMoving1 {
-    0%   {right: 10px; top: 5600px;}
-    50%  {right: 600px; top: 5600px;}
-    100% {right: 10px; top: 5600px;}
+    animation: moveLeftTurn2 6s linear infinite;
+    top: 5600px;
 }
 
 #orange {
@@ -60,33 +71,57 @@ the-fish {
     transform: none;
     animation: rightMoving2 3s linear infinite;
     animation-direction: alternate;
+    animation: moveLeftTurn2 7s linear infinite;
+    top: 5300px;
 }
-@keyframes rightMoving2 {
-    0%   {right: 10px; top: 5300px;}
-    50%  {right: 700px; top: 5300px;}
-    100% {right: 10px; top: 5300px;}
-}
+
 #brown {
     position: absolute;
     transform: none;
     animation: leftMoving2  3s linear infinite;
     animation-direction: alternate;
+    animation: moveLeftTurn2 4s linear infinite;
+    top: 6000px;
 }
-@keyframes leftMoving2 {
-    0%   {left: 10px; top: 6000px;}
-    50%  {left: 700px; top: 6000px;}
-    100% {left: 10px; top: 6000px;}
-}
+@keyframes moveLeftTurn2 {
+    0%{
+        transform: translate(0,0) rotateY(180deg);
+    }
+    50% {
+        transform: translate(700px,0) rotateY(180deg);
+    }
+    51% {
+        transform: translate(700px,0) rotateY(0deg);
+    }
+    100% {
+        transform: translate(0,0) rotateY(0deg);
+    }
+  }
+
 #shark {
     position: absolute;
-    transform: none;
-    animation: leftMoving1  4s linear infinite;
     animation-direction: alternate;
-    transform: scaleX(-1);
+    animation: moveLeftTurn 5s linear infinite;
+    top: 5800px;
+
+    
 }
-@keyframes leftMoving1 {
+/* @keyframes leftMoving1 {
     0%   {left: 10px; top: 5800px;}
     50%  {left: 450px; top: 5800px;}
     100% {left: 10px; top: 5800px;}
-}
-
+} */
+@keyframes moveLeftTurn {
+    0%{
+        transform: translate(0,0) rotateY(180deg);
+    }
+    50% {
+        transform: translate(400px,0) rotateY(180deg);
+    }
+    51% {
+        transform: translate(400px,0) rotateY(0deg);
+    }
+    100% {
+        transform: translate(0,0) rotateY(0deg);
+    }
+  }

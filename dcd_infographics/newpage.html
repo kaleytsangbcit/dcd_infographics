@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>Overfishing Infographics</title>
-        <script src="comps/banner.js"></script>
+        <script src="comps/bannerresult.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
         <script src="comps/waves.js"></script>
         <script src="comps/fish.js"></script>
+        <script src="comps/swipedown.js"></script>
         <link rel="stylesheet" href="./dead.css">
         <style>
             body {
@@ -17,15 +18,38 @@
                 display: block;
             }
 
+            #fishbutton {
+                position: absolute;
+                top:5000px;
+                left:50px;
+                display:block;
+                height:300px;
+                width:240px;
+            }
+
+            #fishbutton > p {
+                font-family: 'Open Sans', sans-serif;
+                font-size:38px;
+                width:238px;
+                color:white;
+            }
+
         </style>
 </head>
 
 <body>
 
+    <div id="fishbutton">
+        <p>Tap the fish to see the Progress of Overfishing</p>
+        <a href="/index.html">
+        <img alt="click to overfishing outcome" src="img/tapfish2.png" >
+    </div>
+
+
     <div id="title">
-        <the-banner
-        img="img/Banner_process.png"
-        ></the-banner>
+        <the-bannerresult
+        img="img/Banner_outcome.png"
+        ></the-bannerresult>
     </div>
 
     <div id="clouds">
@@ -75,6 +99,12 @@
     <coral-healthy id="coral1">
         <img src="img/Coral_dead.png" alt="coral2">
     </coral-healthy>
+    
+    <div id="swipedown">
+        <the-swipedown
+        img="img/Swipedown.png"
+        ></the-swipedown>
+    </div>
     
 </body>
 
