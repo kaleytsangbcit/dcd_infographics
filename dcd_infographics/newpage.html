@@ -1,38 +1,17 @@
 <html>
     <head>
-        <title>Overfishing Infographics</title>
+        <title>Working Dirty</title>
         <script src="comps/bannerresult.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
         <script src="comps/waves.js"></script>
         <script src="comps/fish.js"></script>
         <script src="comps/swipedown.js"></script>
+        <script src="comps/piechart.js"></script>
+        <script src="comps/destructiveFishing.js"></script>
         <link rel="stylesheet" href="./dead.css">
         <style>
-            body {
-                margin:0;
-                background-image: url('img/background_dirty.png');
-                background-size:100%;
-                background-repeat: no-repeat;
-                height: 6800px;
-                display: block;
-            }
 
-            #fishbutton {
-                position: absolute;
-                top:5000px;
-                left:50px;
-                display:block;
-                height:300px;
-                width:240px;
-            }
-
-            #fishbutton > p {
-                font-family: 'Open Sans', sans-serif;
-                font-size:38px;
-                width:238px;
-                color:white;
-            }
 
         </style>
 </head>
@@ -42,7 +21,7 @@
     <div id="fishbutton">
         <p>Tap the fish to see the Progress of Overfishing</p>
         <a href="/index.html">
-        <img alt="click to overfishing outcome" src="img/tapfish2.png" >
+        <img alt="click to overfishing outcome" src="img/tapfish2.png" ></a>
     </div>
 
 
@@ -105,6 +84,39 @@
         img="img/Swipedown.png"
         ></the-swipedown>
     </div>
+
+    <div id="chart1">
+        <the-piechart
+        img="img/piechart_25.png"
+        text="25% 
+        of the world’s fish stocks are <span>depleted</span> or <span>overexploited</span>"
+        ></the-piechart>
+    </div>
+
+    <div id="chart2">
+        <the-piechart
+        img="img/piechart_40.png"
+        text="40% 
+        of the fishes that 
+        are caught worldwidely are from bycatches"
+        ></the-piechart>
+    </div>
+
+    <div id="chart3">
+        <the-piechart
+        img="img/piechart_55.png"
+        text="About 55% 
+        of the world’s coral reefs are affected by overfishing."
+        ></the-piechart>
+    </div>
+
+    <div id="destruct_ex">
+        <the-destruct
+        img="img/cyanide_drawing.png"
+        ></the-destruct>
+    </div>
+
+
     
 </body>
 

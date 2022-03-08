@@ -1,3 +1,46 @@
+body {
+    margin:0;
+    background-image: url('img/background_clean.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 6800px;
+    display: block;
+}
+
+#fishbutton {
+    position: absolute;
+    top:200px;
+    right:40px;
+    display:block;
+    height:300px;
+    width:240px;
+}
+
+#fishbutton > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:38px;
+    width:238px;
+    font-weight: bold;
+}
+
+#info1 {
+    position:absolute;
+    top:250px;
+    left:220px;
+}
+
+#info2 {
+    position:absolute;
+    top:1200px;
+    left:50px;
+}
+
+#chart {
+    position:absolute;
+    top:4000px;
+    left:50px;
+}
+
 
 #coral1 {
     position: relative;

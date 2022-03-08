@@ -49,15 +49,15 @@ template_net.innerHTML = `
     #net_popup {
         position: absolute;
         opacity: 0%;
-        top: 6100px;
+        top: 6150px;
         left: 60px;
         animation: PopUp 10s linear 1 forwards;
         animation-delay: 2s;
       }
 
       @keyframes PopUp {
-        0%   {top: 6100px;}
-        100% {top: 2200px;}
+        0%   {top: 6150px;}
+        100% {top: 2300px;}
     }   
 
 

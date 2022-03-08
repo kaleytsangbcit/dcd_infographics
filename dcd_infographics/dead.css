@@ -1,3 +1,26 @@
+body {
+    margin:0;
+    background-image: url('img/background_dirty.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 6800px;
+    display: block;
+}
+
+#fishbutton {
+    position: absolute;
+    top:5000px;
+    left:50px;
+    display:block;
+    height:300px;
+    width:240px;
+}
+
+#fishbutton > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:38px;
+    width:238px;
+}
 
 #coral1 {
     position: relative;
@@ -74,5 +97,24 @@ the-fish {
 @keyframes topBottom3 {
     from {left:200px; top:1000px;}
     to {left: 250px; top: 1800px;}
+}
+
+#chart1 {
+    position:absolute;
+    top:3000px;
+    left:50px;
+}
+
+#chart2 {
+    position:absolute;
+    top:2000px;
+    left:50px;
+}
+
+
+#chart3 {
+    position:absolute;
+    /* top:2000px;
+    left:50px; */
 }
 

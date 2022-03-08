@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Overfishing</title>
+        <title>Overfishing Infographics</title>
         <script src="comps/banner.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
@@ -10,7 +10,6 @@
         <script src="comps/swipeup.js"></script>
         <script src="comps/info.js"></script>
         <script src="comps/piechart.js"></script>
-        <script src="comps/destructiveFishing.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,43 +19,16 @@
 
 
         <link rel="stylesheet" href="./main.css">
-        <style>
-            body {
-                margin:0;
-                background-image: url('img/background_clean.png');
-                background-size:100%;
-                background-repeat: no-repeat;
-                height: 6800px;
-                display: block;
-            }
 
-            #fishbutton {
-                position: absolute;
-                top:1300px;
-                right:50px;
-                display:block;
-                height:300px;
-                width:240px;
-            }
-
-            #fishbutton > p {
-                font-family: 'Open Sans', sans-serif;
-                font-size:38px;
-                width:238px;
-                font-weight: bold;
-            }
-
-
-        </style>
 </head>
 
 <body>
     <the-body id="body"></the-body>
 
     <div id="fishbutton">
-        <p>Tap the fish to see the outcome of Overfishing</p>
+        <p>Tap the fish to see the Outcome of Overfishing</p>
         <a href="/newpage.html">
-        <img alt="click to overfishing outcome" src="img/tapfish.png" >
+        <img alt="click to overfishing outcome" src="img/tapfish.png" ></a>
     </div>
 
     <div id="title">
@@ -129,31 +101,20 @@
         img="img/Swipeup.png"
         ></the-swipeup>
     </div>
-    
-    <div id="info">
-        <the-info id="info1"></the-info>
-        <the-info 
-            id="info2"
+
+        
+    <div id="info1">
+        <the-info id="info1">
             head-text=" "
             desc-text="Marine life population are in danger due to Overfishing">
         </the-info>
     </div>
 
-    <div id="chart">
-        <the-piechart
-        img="img/piechart_25.png"
-        text="25% 
-        of the world’s fish stocks are depleted or overexploited"
-        ></the-piechart>
-    </div>
-
-    <div id="chart">
-        <the-piechart
-        img="img/piechart_40.png"
-        text="40% 
-        of the fishes that 
-        are caught worldwidely are from bycatches"
-        ></the-piechart>
+    <div id="info2">
+        <the-info id="info2"
+            head-text=" "
+            desc-text="Marine life population are in danger due to Overfishing">
+        </the-info>
     </div>
 
     <div id="chart">
@@ -164,20 +125,11 @@
         ></the-piechart>
     </div>
 
-    <div id="chart">
-        <the-piechart
-        img="img/piechart_55.png"
-        text="About 55% 
-        of the world’s coral reefs are affected by overfishing."
-        ></the-piechart>
-    </div>
 
-    <div id="destruct_ex">
-        <the-destruct
-        img="img/cyanide_drawing.png"
-        ></the-destruct>
-    </div>
 
+
+
+    
     
 </body>
 
