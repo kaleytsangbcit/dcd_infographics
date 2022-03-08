@@ -9,6 +9,11 @@
         <script src="comps/net.js"></script>
         <script src="comps/swipeup.js"></script>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
         <link rel="stylesheet" href="./fish.css">
         <style>
             body {
@@ -20,12 +25,35 @@
                 display: block;
             }
 
+            #fishbutton {
+                position: absolute;
+                top:1300px;
+                right:50px;
+                display:block;
+                height:300px;
+                width:240px;
+            }
+
+            #fishbutton > p {
+                font-family: 'Open Sans', sans-serif;
+                font-size:38px;
+                width:238px;
+                font-weight: bold;
+            }
+
 
         </style>
 </head>
 
 <body>
     <the-body id="body"></the-body>
+
+    <div id="fishbutton">
+        <p>Tap the fish to see the outcome of Overfishing</p>
+        <a href="/newpage.html">
+        <img alt="click to overfishing outcome" src="img/tapfish.png" >
+    </div>
+
     <div id="title">
         <the-banner
         img="img/Banner_process.png"
@@ -89,12 +117,6 @@
         <the-net
         img="img/Net.png"
         ></the-net>
-    </div>
-
-    <div id="string">
-        <the-string
-        img="img/String.png"
-        ></the-string>
     </div>
 
     <div id="swipeup">
