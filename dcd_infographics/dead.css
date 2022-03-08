@@ -101,20 +101,39 @@ the-fish {
 
 #chart1 {
     position:absolute;
-    top:3000px;
-    left:50px;
+    top:2000px;
+    right: 60px;
 }
 
 #chart2 {
     position:absolute;
-    top:2000px;
+    top:3000px;
     left:50px;
 }
 
 
 #chart3 {
+    position: absolute;
+    top:5500px;
+    right:150px;
+
+}
+
+#destruct_ex1 {
     position:absolute;
-    /* top:2000px;
-    left:50px; */
+    top: 3500px;
+    right: 100px;
+}
+
+#destruct_ex2 {
+    position:absolute;
+    top: 4000px;
+    left: 100px;
+}
+
+#destruct_ex3 {
+    position:absolute;
+    top: 4500px;
+    right: 100px;
 }
 

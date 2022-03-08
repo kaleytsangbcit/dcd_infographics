@@ -11,7 +11,7 @@ template_destruct.innerHTML = `
     }
 
     #destruct_image img {
-        width: 150px;
+        width: 200px;
     }
 
 </style>
@@ -37,12 +37,18 @@ class TheDestruct extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_destruct.content.cloneNode(true)); //use the template to make a clone
 
-    if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#destruct_image > img").src = this.getAttribute("img");
+        if(this.getAttribute("img")){
+            this.shadowRoot.querySelector("#destruct_image > img").src = this.getAttribute("img");
         }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+    SlideRight(){
+        console.log("itis time to slide right")
+        this.shadowRoot.querySelector("#destruct_ex").style.cssText =`
+        left:100vw;
+        `
+    }
 }
 
 //MUST HAVE - define the tag for the custom elements
