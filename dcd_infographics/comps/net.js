@@ -17,7 +17,7 @@ template_net.innerHTML = `
         transform: none;
         top: 5200px;
         left: 150px;
-        animation: Movingup 15s linear 1 forwards;
+        animation: Movingup 10s linear 1 forwards;
         animation-delay: 2s;
       }
 
@@ -35,7 +35,7 @@ template_net.innerHTML = `
         left: 355px;
         content: '';
         background: black;
-        animation: string 15s linear 1 forwards;
+        animation: string 10s linear 1 forwards;
         animation-delay: 2s;
       }
       
@@ -45,14 +45,32 @@ template_net.innerHTML = `
     }
 
 
+
+    #net_popup {
+        position: absolute;
+        opacity: 0%;
+        top: 6100px;
+        left: 60px;
+        animation: PopUp 10s linear 1 forwards;
+        animation-delay: 2s;
+      }
+
+      @keyframes PopUp {
+        0%   {top: 6100px;}
+        100% {top: 2200px;}
+    }   
+
+
 </style>
 
-<div id='net_cont'>
-    <div id='net_image' id="net_fade">
+    <div id='net_image'>
             <img id='net' src='/img/Net_with_Fish.png'/>
     </div>
     <div id ='string'></div>
-</div>
+    <div id ='net_popup'>
+        <img id='popup' src='/img/Popup_net.png'/>
+    <div>
+
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
@@ -73,26 +91,16 @@ class TheNet extends HTMLElement {
         if(this.getAttribute("img")){
             this.shadowRoot.querySelector("#net_image > img").src = this.getAttribute("img");
         }
+
+        this.shadowRoot.querySelector("#net_image").onclick = () => this.PopUp();
+        }
     
     // $(window).onsrcoll = () => this.HandleNet();
 
     // }
 
-    
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-        // function showIt() {
-        //     this.shadowRoot.querySelector("net").style.display = "block";
-        // }
-        // setTimeout(showIt, 5000); // after 5 secs
-
-        // setTimeout(() => {
-        //     const box = this.shadowRoot.querySelector("net_cont");
-
-        //     box.style.display="block"
-        // }
-
-        // )
         // HandleNet(){
         //      this.shadowRoot.querySelector("#net_image").style.cssText = `
         //         top:500px;
@@ -109,7 +117,9 @@ class TheNet extends HTMLElement {
         //           .css({ left: leftPosition });
         //     });
         //   });
-        }
+        PopUp(){
+            this.shadowRoot.querySelector("#net_popup").style.opacity = "90%";
+        } 
     }
 
 
