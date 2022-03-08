@@ -8,30 +8,29 @@ template_swipeup.innerHTML = `
 
 
     #swipeup1{
-        right: 30px;
-        position: absolute;
-        top:2200px;
+        right: 20px;
+        position: fixed;
+        transform: scale(0.7);
     }
 
-    #swipeup2{
-        right: 30px;
-        position: absolute;
-        top:4000px;
-    }
+    // #swipeup2{
+    //     right: 30px;
+    //     position: absolute;
+    //     top:4000px;
+    // }
 
-    #swipeup3{
-        right: 30px;
-        position: absolute;
-        top:6000px;
-    }
+    // #swipeup3{
+    //     right: 30px;
+    //     position: absolute;
+    //     top:6000px;
+    // }
 
 </style>
 
 
 <div id='swipeup_image'>
         <img id='swipeup1' src='/img/Swipeup.png'/>
-        <img id='swipeup2' src='/img/Swipeup.png'/>
-        <img id='swipeup3' src='/img/Swipeup.png'/>
+
 
 </div>
 `;

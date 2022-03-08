@@ -17,7 +17,7 @@ template_net.innerHTML = `
         transform: none;
         top: 5200px;
         left: 150px;
-        animation: Movingup 10s linear 1 forwards;
+        animation: Movingup 15s linear 1 forwards;
         animation-delay: 2s;
       }
 
@@ -35,7 +35,7 @@ template_net.innerHTML = `
         left: 355px;
         content: '';
         background: black;
-        animation: string 10s linear 1 forwards;
+        animation: string 15s linear 1 forwards;
         animation-delay: 2s;
       }
       
@@ -48,7 +48,7 @@ template_net.innerHTML = `
 </style>
 
 <div id='net_cont'>
-    <div id='net_image'>
+    <div id='net_image' id="net_fade">
             <img id='net' src='/img/Net_with_Fish.png'/>
     </div>
     <div id ='string'></div>
@@ -81,6 +81,18 @@ class TheNet extends HTMLElement {
     
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+        // function showIt() {
+        //     this.shadowRoot.querySelector("net").style.display = "block";
+        // }
+        // setTimeout(showIt, 5000); // after 5 secs
+
+        // setTimeout(() => {
+        //     const box = this.shadowRoot.querySelector("net_cont");
+
+        //     box.style.display="block"
+        // }
+
+        // )
         // HandleNet(){
         //      this.shadowRoot.querySelector("#net_image").style.cssText = `
         //         top:500px;
