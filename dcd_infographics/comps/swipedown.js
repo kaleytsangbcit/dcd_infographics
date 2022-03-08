@@ -8,31 +8,18 @@ template_swipedown.innerHTML = `
 
 
     #swipedown1{
-        right: 30px;
-        position: absolute;
-        top:1200px;
+        right: 20px;
+        position: fixed;
+        transform: scale(0.7);
     }
 
-    #swipedown2{
-        right: 30px;
-        position: absolute;
-        top:3000px;
-    }
 
-    #swipedown3{
-        right: 30px;
-        position: absolute;
-        top:4500px;
-    }
 
 </style>
 
 
 <div id='swipedown_image'>
         <img id='swipedown1' src='/img/Swipedown.png'/>
-        <img id='swipedown2' src='/img/Swipedown.png'/>
-        <img id='swipedown3' src='/img/Swipedown.png'/>
-
 </div>
 `;
 
