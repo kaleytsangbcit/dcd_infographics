@@ -11,19 +11,9 @@ template_swipeup.innerHTML = `
         right: 20px;
         position: fixed;
         transform: scale(0.7);
+        display:none;
     }
 
-    // #swipeup2{
-    //     right: 30px;
-    //     position: absolute;
-    //     top:4000px;
-    // }
-
-    // #swipeup3{
-    //     right: 30px;
-    //     position: absolute;
-    //     top:6000px;
-    // }
 
 </style>
 
@@ -53,10 +43,25 @@ class TheSwipeUp extends HTMLElement {
     if(this.getAttribute("img")){
         this.shadowRoot.querySelector("#swipeup_image > img").src = this.getAttribute("img");
         }
+
+    
+    window.onscroll = () => this.scrollFunction();
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+
+// When the user scrolls down 30px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+scrollFunction() {
+  if (document.body.scrollTop > 60) {
+    this.shadowRoot.querySelector("#swipeup1").style.display = "block";
+  } else {
+    this.shadowRoot.querySelector("#swipeup1").style.display = "none";
+  }
+ }
 }
+
 
 //MUST HAVE - define the tag for the custom elements
 customElements.define("the-swipeup", TheSwipeUp)
