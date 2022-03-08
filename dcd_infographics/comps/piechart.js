@@ -14,12 +14,22 @@ template_chart.innerHTML = `
         width: 300px;
     }
 
+    #chartText {
+        width:240px;
+        font-size: 28px;
+        position: relative;
+        top: -220px;
+        left: 36px;
+        text-align: center;
+        color: white;
+    }
+
 </style>
 
 
 <div id='chart_image'>
         <img id='chart' src='/img/piechart_25.png'/>
-        <div id = chartText>test</div>
+        <div id='chartText'>text</div>
 </div>
 `;
 

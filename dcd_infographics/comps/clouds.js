@@ -28,9 +28,9 @@ template_clouds.innerHTML = `
       }
 
       @keyframes rightMoving {
-        0%   {right: 10px; top: 500px;}
-        50%  {right: 250px; top: 500px;}
-        100% {right: 10px; top: 500px;}
+        0%   {right: 10px; top: 600px;}
+        50%  {right: 250px; top: 600px;}
+        100% {right: 10px; top: 600px;}
     }
     
     #clouds_image_1 img, 
