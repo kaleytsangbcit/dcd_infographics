@@ -1,37 +1,17 @@
 <html>
     <head>
-        <title>Overfishing Infographics</title>
+        <title>Working Dirty</title>
         <script src="comps/bannerresult.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
         <script src="comps/waves.js"></script>
         <script src="comps/fish.js"></script>
         <script src="comps/swipedown.js"></script>
+        <script src="comps/piechart.js"></script>
+        <script src="comps/destructiveFishing.js"></script>
         <link rel="stylesheet" href="./dead.css">
         <style>
-            body {
-                margin:0;
-                background-image: url('img/background_dirty.png');
-                background-size:100%;
-                background-repeat: no-repeat;
-                height: 6800px;
-                display: block;
-            }
 
-            #fishbutton {
-                position: absolute;
-                top:5000px;
-                left:50px;
-                display:block;
-                height:300px;
-                width:240px;
-            }
-
-            #fishbutton > p {
-                font-family: 'Open Sans', sans-serif;
-                font-size:38px;
-                width:238px;
-            }
 
         </style>
 </head>
@@ -40,7 +20,7 @@
 
     <div id="fishbutton">
         <p>Tap the fish to see the Progress of Overfishing</p>
-        <a href="/working.html">
+        <a href="/index.html">
         <img alt="click to overfishing outcome" src="img/tapfish2.png" ></a>
     </div>
 
@@ -109,7 +89,7 @@
         <the-piechart
         img="img/piechart_25.png"
         text="25% 
-        of the world’s fish stocks are depleted or overexploited"
+        of the world’s fish stocks are <span>depleted</span> or <span>overexploited</span>"
         ></the-piechart>
     </div>
 

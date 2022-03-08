@@ -24,6 +24,10 @@ template_chart.innerHTML = `
         color: white;
     }
 
+    #chartText span {
+        color:#FFC5C5;
+    }
+
 </style>
 
 
