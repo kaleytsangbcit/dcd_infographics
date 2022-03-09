@@ -15,6 +15,7 @@ template_chart.innerHTML = `
     }
 
     #chartText {
+        font-family: 'Open Sans', sans-serif;        
         width:240px;
         font-size: 28px;
         position: relative;
