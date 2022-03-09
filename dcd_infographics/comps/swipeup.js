@@ -45,7 +45,7 @@ class TheSwipeUp extends HTMLElement {
         }
 
     
-    window.onscroll = () => this.scrollFunction();
+        // document.querySelector("#wrapper").onscroll = () => this.scrollFunction();
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
@@ -54,7 +54,7 @@ class TheSwipeUp extends HTMLElement {
 // window.onscroll = function() {scrollFunction()};
 
 scrollFunction() {
-  if (document.body.scrollTop > 60) {
+  if (document.querySelector("#wrapper").scrollTop > 60) {
     this.shadowRoot.querySelector("#swipeup1").style.display = "block";
   } else {
     this.shadowRoot.querySelector("#swipeup1").style.display = "none";

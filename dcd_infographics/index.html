@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Overfishing Infographics</title>
+        <script src="comps/body.js"></script>
         <script src="comps/banner.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
@@ -10,8 +11,8 @@
         <script src="comps/swipeup.js"></script>
         <script src="comps/info.js"></script>
         <script src="comps/piechart.js"></script>
-
         <script src="comps/scrollcont.js"></script>
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,119 +22,146 @@
 
 
         <link rel="stylesheet" href="./main.css">
-
+        <style>
+            #wrapper {
+                position: fixed;
+                left:0;
+                top:0;
+                height:100vh;
+                width:100vw;
+                overflow-y: auto;
+            }
+        </style>
 </head>
 
 <body>
-    <the-body id="body"></the-body>
-    <scroll-cont></scroll-cont>
+    <div id="wrapper">
 
-    <div id="fishbutton">
-        <p>Tap the fish to see the Outcome of Overfishing</p>
-        <a href="/newpage.html">
-        <img alt="click to overfishing outcome" src="img/tapfish.png" ></a>
-    </div>
+        <the-body id="body"></the-body>
 
-    <div id="title">
-        <the-banner
-        img="img/Banner_process.png"
-        ></the-banner>
-    </div>
+        <div id="fishbutton">
+            <p>Tap the fish to see the Outcome of Overfishing</p>
+            <a href="/newpage.html">
+            <img alt="click to overfishing outcome" src="img/tapfish.png" ></a>
+        </div>
 
-    <div id="clouds">
-        <the-clouds
-        img1="img/Cloud_01.png"
-        img2="img/Cloud_02.png"
-        ></the-clouds>
-    </div>
+        <div id="title">
+            <the-banner
+            img="img/Banner_process.png"
+            ></the-banner>
+        </div>
 
-    <div id="waves">
-        <the-waves
-        img="img/Waves.png"
-        ></the-waves>
-    </div>
+        <div id="clouds">
+            <the-clouds
+            img1="img/Cloud_01.png"
+            img2="img/Cloud_02.png"
+            ></the-clouds>
+        </div>
 
-    <div id="fishing_boat">
-        <the-boat
-        img="img/FishingBoat.png"
-        ></the-boat>
-    </div>
+        <div id="waves">
+            <the-waves
+            img="img/Waves.png"
+            ></the-waves>
+        </div>
 
-    <the-fish
-        class="gray"
-        id="gray"
-        img="img/Fish_Gray.png"
-    ></the-fish>
-    <the-fish
-        class="black"
-        id="black"
-        img="img/Fish_Black.png"
-    ></the-fish>
-    <the-fish
-        class="green"
-        id="green"
-        img="img/Fish_Green.png"
-    ></the-fish>
-    <the-fish
-        class="orange"
-        id="orange"
-        img="img/Fish_Orange.png"
-    ></the-fish>
-    <the-fish
-        class="brown"
-        id="brown"
-        img="img/Fish_Brown.png"
-    ></the-fish>
-    <the-fish
-        class="shark"
-        id="shark"
-        img="img/Shark.png"
-    ></the-fish>
-    <coral-healthy id="coral1">
-        <img src="img/Coral_healthy.png" alt="coral1">
-    </coral-healthy>
+        <div id="fishing_boat">
+            <the-boat
+            img="img/FishingBoat.png"
+            ></the-boat>
+        </div>
 
-    <div id="net">
-        <the-net
-        img="img/Net.png"
-        ></the-net>
-    </div>
+        <the-fish
+            class="gray"
+            id="gray"
+            img="img/Fish_Gray.png"
+        ></the-fish>
+        <the-fish
+            class="black"
+            id="black"
+            img="img/Fish_Black.png"
+        ></the-fish>
+        <the-fish
+            class="green"
+            id="green"
+            img="img/Fish_Green.png"
+        ></the-fish>
+        <the-fish
+            class="orange"
+            id="orange"
+            img="img/Fish_Orange.png"
+        ></the-fish>
+        <the-fish
+            class="brown"
+            id="brown"
+            img="img/Fish_Brown.png"
+        ></the-fish>
+        <the-fish
+            class="shark"
+            id="shark"
+            img="img/Shark.png"
+        ></the-fish>
+        <coral-healthy id="coral1">
+            <img src="img/Coral_healthy.png" alt="coral1">
+        </coral-healthy>
 
-    <div id="swipeup">
-        <the-swipeup
-        img="img/Swipeup.png"
-        ></the-swipeup>
-    </div>
+        <div id="net">
+            <the-net
+            id="net_image"
+            img="img/Net.png"
+            ></the-net>
+        </div>
+
+        <div id="swipeup">
+            <the-swipeup
+            id="swipe"
+            img="img/Swipeup.png"
+            ></the-swipeup>
+        </div>
+
+            
+        <div id="info1">
+            <the-info id="info1">
+                head-text=" "
+                desc-text="Marine life population are in danger due to Overfishing">
+            </the-info>
+        </div>
+
+        <div id="info2">
+            <the-info id="info2"
+                head-text=" "
+                desc-text="Marine life population are in danger due to Overfishing">
+            </the-info>
+        </div>
+
+        <div id="chart">
+            <the-piechart
+            img="img/piechart_55.png"
+            text="About 55% 
+            of the world’s oceans have been taken over by industrial fishing"
+            ></the-piechart>
+        </div>
+
+
+
+
+
+    
 
         
-    <div id="info1">
-        <the-info id="info1">
-            head-text=" "
-            desc-text="Marine life population are in danger due to Overfishing">
-        </the-info>
-    </div>
-
-    <div id="info2">
-        <the-info id="info2"
-            head-text=" "
-            desc-text="Marine life population are in danger due to Overfishing">
-        </the-info>
-    </div>
-
-    <div id="chart">
-        <the-piechart
-        img="img/piechart_55.png"
-        text="About 55% 
-        of the world’s oceans have been taken over by industrial fishing"
-        ></the-piechart>
-    </div>
-
-
-
-
-
+        <script>
+            //console.log(document.querySelector("#wrapper").offsetHeight)
+            document.body.onload = () => {
+                document.querySelector("#wrapper").scrollTop = 4760;
     
     
+                document.querySelector("#wrapper").onscroll = (e) => {
+                    document.querySelector("#net_image").ChangeNetPosition(e.target.scrollTop);
+                    document.querySelector("#net_image").ChangePopupPosition(e.target.scrollTop);
+                    document.querySelector("#swipe").scrollFunction();
+                }
+            }
+        </script>
+
 </body>
 
 </html>

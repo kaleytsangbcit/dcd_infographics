@@ -8,6 +8,9 @@ template_banner.innerHTML = `
     #banner_image {
         margin: 100px auto;
         width: 80%;
+        position: absolute;
+        top:10px;
+        left:100px;
     }
 
     #banner_image img {
@@ -37,8 +40,8 @@ class TheBanner extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_banner.content.cloneNode(true)); //use the template to make a clone
 
-    if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#banner > img").src = this.getAttribute("img");
+        if(this.getAttribute("img")){
+            this.shadowRoot.querySelector("#banner > img").src = this.getAttribute("img");
         }
     }
 

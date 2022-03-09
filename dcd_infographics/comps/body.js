@@ -2,16 +2,19 @@
 var template_body = document.createElement("template"); //<template> </template> RULE
 
 //To-do - CREATE THE UI HERE!
-template_boat.innerHTML = `
+template_body.innerHTML = `
 
 <style>
-
+#bg{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
 </style>
 
+<img id = "bg" src='/img/background_clean.png'/>
 
-<div id='background_image'>
-        <img id='body' src='/img/background_clean.png'/>
-</div>
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
@@ -29,16 +32,8 @@ class TheBody extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.appendChild(template_body.content.cloneNode(true)); //use the template to make a clone
 
-    if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#background_image > img").src = this.getAttribute("img");
-        }
+   
     }
-
-    //To-do - CREATE THE FUNCTIONALITIES HERE!
-    $(window).ready(function(){
-        $('html,body').animate({ scrollTop: 7000 }, 0);  
-        $('html,body').animate({ scrollTop: 0 }, 2000); 
-    });
 }
 
 //MUST HAVE - define the tag for the custom elements
