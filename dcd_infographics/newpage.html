@@ -1,11 +1,14 @@
 <html>
     <head>
         <title>Overfishing Outcome</title>
+        <script src="comps/bodydirty.js"></script>
+        <script src="comps/fishbutton2.js"></script>
         <script src="comps/bannerresult.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
         <script src="comps/waves.js"></script>
         <script src="comps/fish.js"></script>
+        <script src="comps/groupfish.js"></script>
         <script src="comps/swipedown.js"></script>
         <script src="comps/piechart.js"></script>
         <script src="comps/destructiveFishing.js"></script>
@@ -13,123 +16,155 @@
 
         <link rel="stylesheet" href="./dead.css">
         <style>
-
-
+            #wrapper {
+                position: fixed;
+                left:0;
+                top:0;
+                height:100vh;
+                width:100vw;
+                overflow-y: auto;
+            }
         </style>
 </head>
 
 <body>
 
-    <div id="fishbutton">
-        <p>Tap the fish to see the Progress of Overfishing</p>
-        <a href="/index.html">
-        <img alt="click to overfishing outcome" src="img/tapfish2.png" ></a>
+    <div id="wrapper">
+
+        <the-bodydirty id="body"></the-bodydirty>
+
+        <div id="fishbutton2">
+            <the-fishbutton2></the-fishbutton2>
+        </div>
+
+        <div id="title">
+            <the-bannerresult
+            img="img/Banner_outcome.png"
+            ></the-bannerresult>
+        </div>
+
+        <div id="clouds">
+            <the-clouds
+            img1="img/Cloud_01.png"
+            img2="img/Cloud_02.png"
+            ></the-clouds>
+        </div>
+
+        <div id="waves">
+            <the-waves
+            img="img/Waves.png"
+            ></the-waves>
+        </div>
+
+        <div id="fishing_boat">
+            <the-boat
+            img="img/FishingBoat.png"
+            ></the-boat>
+        </div>
+
+        <the-fish
+            class="gray"
+            id="gray"
+            img="img/Fish_Gray.png"
+        ></the-fish>
+        <the-fish
+            class="gray2"
+            id="gray2"
+            img="img/Fish_Gray.png"
+        ></the-fish>
+        <the-fish
+            class="orange"
+            id="orange"
+            img="img/Fish_Orange.png"
+        ></the-fish>
+        <the-fish
+            class="gray3"
+            id="gray3"
+            img="img/Fish_Gray.png"
+        ></the-fish>
+        <the-fish
+            class="shark"
+            id="shark"
+            img="img/Shark_Big.png"
+        ></the-fish>
+        <coral-healthy id="coral1">
+            <img src="img/Coral_dead.png" alt="coral2">
+        </coral-healthy>
+        
+        <div id="swipedown">
+            <the-swipedown
+            id="swipe"
+            img="img/Swipedown.png"
+            ></the-swipedown>
+        </div>
+
+        <div id="groupfish">
+            <the-groupfish
+            img="img/FishGroup.png"
+            text="Populations of major commercial <span>species</span> have <span>declined</span> by more than <p>90%</p>"
+            ></the-groupfish>
+        </div>
+
+        <div id="chart1">
+            <the-piechart
+            img="img/piechart_40.png"
+            text="40% 
+            of the fishes that 
+            are caught worldwidely are from <span>bycatches</span>"
+            ></the-piechart>
+        </div>
+
+        <div id="chart2">
+            <the-piechart
+            img="img/piechart_25.png"
+            text="25% 
+            of the world’s fish stocks are <span>depleted</span> or <span>overexploited</span>"
+            ></the-piechart>
+        </div>
+
+        <div id="chart3">
+            <the-piechart
+            img="img/piechart_55_dead.png"
+            text="About 55% 
+            of the world's coral reefs are affected by overfishing"
+            ></the-piechart>
+        </div>
+
+        <div id="destruct_ex1">
+            <the-destruct
+            img="img/cyanide_drawing.png"
+            text="Cyanide Fishing"
+            ></the-destruct>
+        </div>
+
+        <div id="destruct_ex2">
+            <the-destruct
+            img="img/blastfishing_drawing.png"
+            text="Bottom Trawling"
+            ></the-destruct>
+        </div>
+
+        <div id="destruct_ex3">
+            <the-destruct
+            img="img/trawling_drawings.png"
+            text="Blast Fishing"
+            ></the-destruct>
+        </div>
     </div>
 
 
-    <div id="title">
-        <the-bannerresult
-        img="img/Banner_outcome.png"
-        ></the-bannerresult>
-    </div>
 
-    <div id="clouds">
-        <the-clouds
-        img1="img/Cloud_01.png"
-        img2="img/Cloud_02.png"
-        ></the-clouds>
-    </div>
+    <script>
+        //console.log(document.querySelector("#wrapper").offsetHeight)
+        // document.body.onload = () => {
+        //     document.querySelector("#wrapper").scrollTop = 4760;
 
-    <div id="waves">
-        <the-waves
-        img="img/Waves.png"
-        ></the-waves>
-    </div>
 
-    <div id="fishing_boat">
-        <the-boat
-        img="img/FishingBoat.png"
-        ></the-boat>
-    </div>
-
-    <the-fish
-        class="gray"
-        id="gray"
-        img="img/Fish_Gray.png"
-    ></the-fish>
-    <the-fish
-        class="gray2"
-        id="gray2"
-        img="img/Fish_Gray.png"
-    ></the-fish>
-    <the-fish
-        class="orange"
-        id="orange"
-        img="img/Fish_Orange.png"
-    ></the-fish>
-    <the-fish
-        class="gray3"
-        id="gray3"
-        img="img/Fish_Gray.png"
-    ></the-fish>
-    <the-fish
-        class="shark"
-        id="shark"
-        img="img/Shark_Big.png"
-    ></the-fish>
-    <coral-healthy id="coral1">
-        <img src="img/Coral_dead.png" alt="coral2">
-    </coral-healthy>
+            document.querySelector("#wrapper").onscroll = (e) => {
+                document.querySelector("#swipe").scrollFunction();
+            }
     
-    <div id="swipedown">
-        <the-swipedown
-        img="img/Swipedown.png"
-        ></the-swipedown>
-    </div>
-
-    <div id="chart1">
-        <the-piechart
-        img="img/piechart_40.png"
-        text="40% 
-        of the fishes that 
-        are caught worldwidely are from bycatches"
-        ></the-piechart>
-    </div>
-
-    <div id="chart2">
-        <the-piechart
-        img="img/piechart_25.png"
-        text="25% 
-        of the world’s fish stocks are <span>depleted</span> or <span>overexploited</span>"
-        ></the-piechart>
-    </div>
-
-    <div id="chart3">
-        <the-piechart
-        img="img/piechart_55.png"
-        text="About 55% 
-        of the world's coral reefs are affected by overfishing."
-        ></the-piechart>
-    </div>
-
-    <div id="destruct_ex1">
-        <the-destruct
-        img="img/cyanide_drawing.png"
-        ></the-destruct>
-    </div>
-
-    <div id="destruct_ex2">
-        <the-destruct
-        img="img/blastfishing_drawing.png"
-        ></the-destruct>
-    </div>
-
-    <div id="destruct_ex3">
-        <the-destruct
-        img="img/trawling_drawings.png"
-        ></the-destruct>
-    </div>
-
+    </script>
 
     
 </body>

@@ -1,17 +1,5 @@
-#fishbutton {
-    position: absolute;
-    top:200px;
-    right:40px;
-    display:block;
-    height:300px;
-    width:240px;
-}
-
-#fishbutton > p {
+html {
     font-family: 'Open Sans', sans-serif;
-    font-size:38px;
-    width:238px;
-    font-weight: bold;
 }
 
 #info1 {
@@ -31,7 +19,6 @@
     top:4000px;
     left:50px;
 }
-
 
 #coral1 {
     position: relative;
@@ -91,7 +78,6 @@ the-fish {
 
 
 #green {
-
     position: absolute;
     transform: none;
     animation: rightMoving1 5s linear infinite;

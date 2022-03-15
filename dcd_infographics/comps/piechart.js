@@ -15,11 +15,10 @@ template_chart.innerHTML = `
     }
 
     #chartText {
-        font-family: 'Open Sans', sans-serif;        
         width:240px;
         font-size: 28px;
         position: relative;
-        top: -220px;
+        top: -210px;
         left: 36px;
         text-align: center;
         color: white;

@@ -11,10 +11,24 @@ template_banner.innerHTML = `
         position: absolute;
         top:10px;
         left:100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #banner_image img {
         width: 100%;
+    }
+
+    #text {
+        width:600px;
+        font-size: 50px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        text-align: center;
+        color: black;
     }
 
 </style>
@@ -22,6 +36,7 @@ template_banner.innerHTML = `
 
 <div id='banner_image'>
         <img id='banner' src='/img/Banner_process.png'/>
+        <div id='text'>Overfishing - Process</div>
 </div>
 `;
 
@@ -41,7 +56,7 @@ class TheBanner extends HTMLElement {
         this.shadowRoot.appendChild(template_banner.content.cloneNode(true)); //use the template to make a clone
 
         if(this.getAttribute("img")){
-            this.shadowRoot.querySelector("#banner > img").src = this.getAttribute("img");
+            this.shadowRoot.querySelector("#banner_image > img").src = this.getAttribute("img");
         }
     }
 

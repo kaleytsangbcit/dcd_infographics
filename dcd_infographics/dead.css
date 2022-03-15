@@ -1,25 +1,7 @@
-body {
-    margin:0;
-    background-image: url('img/background_dirty.png');
-    background-size:100%;
-    background-repeat: no-repeat;
-    height: 6800px;
-    display: block;
-}
-
-#fishbutton {
-    position: absolute;
-    top:5000px;
-    left:50px;
-    display:block;
-    height:300px;
-    width:240px;
-}
-
-#fishbutton > p {
-    font-family: 'Open Sans', sans-serif;
-    font-size:38px;
-    width:238px;
+#groupfish {
+    position:absolute;
+    top:2200px;
+    left:60px; 
 }
 
 #coral1 {

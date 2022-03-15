@@ -1,11 +1,11 @@
 //MUST HAVE - CREATE A TEMPLATE TAG
-var template_destruct = document.createElement("template"); //<template> </template> RULE
+var template_groupfish = document.createElement("template"); //<template> </template> RULE
 
 //To-do - CREATE THE UI HERE!
-template_destruct.innerHTML = `
+template_groupfish.innerHTML = `
 
 <style>
-    #destruct_image {
+    #groupfish {
         margin: 100px auto;
         width: 100%;
         display: flex;
@@ -13,32 +13,40 @@ template_destruct.innerHTML = `
         align-items: center;
     }
 
-    #destruct_image img {
-        width: 200px;
+    #groupfish img {
+        width: 400px;
         justify-content:center;
     }
 
     #text {
-        width:300px;
-        font-size: 38px;
+        width:500px;
+        font-size: 36px;
         position: relative;
         top: 20px;
         text-align: center;
         color: white;
     }
 
+    #groupfish span {
+        color:#FFC5C5;
+    }
+
+    #groupfish p {
+        font-size: 48px;
+        margin:0px;
+    }
 
 </style>
 
 
-<div id='destruct_image'>
-        <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
+<div id='groupfish'>
+        <img src='/img/FishGroup.png'/>
         <div id='text'>text</div>
 </div>
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
-class TheDestruct extends HTMLElement {
+class TheGroupFish extends HTMLElement {
 
     //MUST HAVE - CREATE A CONSTRUCTOR TO DO INITAL ASSOCIATIONS
     constructor(){
@@ -50,24 +58,18 @@ class TheDestruct extends HTMLElement {
 
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
-        this.shadowRoot.appendChild(template_destruct.content.cloneNode(true)); //use the template to make a clone
+        this.shadowRoot.appendChild(template_groupfish.content.cloneNode(true)); //use the template to make a clone
 
         if(this.getAttribute("img")){
-            this.shadowRoot.querySelector("#destruct_image > img").src = this.getAttribute("img");
+            this.shadowRoot.querySelector("#groupfish > img").src = this.getAttribute("img");
         }
         if(this.getAttribute("text")){
-            this.shadowRoot.querySelector("#destruct_image > #text").innerHTML = this.getAttribute("text");
+            this.shadowRoot.querySelector("#groupfish > #text").innerHTML = this.getAttribute("text");
         }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    SlideRight(){
-        console.log("itis time to slide right")
-        this.shadowRoot.querySelector("#destruct_ex").style.cssText =`
-        left:100vw;
-        `
-    }
 }
 
 //MUST HAVE - define the tag for the custom elements
-customElements.define("the-destruct", TheDestruct)
+customElements.define("the-groupfish", TheGroupFish)

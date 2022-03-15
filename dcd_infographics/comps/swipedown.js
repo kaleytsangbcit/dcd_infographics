@@ -7,19 +7,21 @@ template_swipedown.innerHTML = `
 <style>
 
 
-    #swipedown1{
-        right: 20px;
+    #swipedown{
+        right: 0px;
         position: fixed;
         transform: scale(0.7);
+        display:none;
     }
-
 
 
 </style>
 
 
 <div id='swipedown_image'>
-        <img id='swipedown1' src='/img/Swipedown.png'/>
+        <img id='swipedown' src='/img/Swipedown.png'/>
+
+
 </div>
 `;
 
@@ -41,10 +43,25 @@ class TheSwipeDown extends HTMLElement {
     if(this.getAttribute("img")){
         this.shadowRoot.querySelector("#swipedown_image > img").src = this.getAttribute("img");
         }
+
+    
+        // document.querySelector("#wrapper").onscroll = () => this.scrollFunction();
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
+
+// When the user scrolls down 30px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+scrollFunction() {
+  if (document.querySelector("#wrapper").scrollTop < 4200) {
+    this.shadowRoot.querySelector("#swipedown").style.display = "block";
+  } else {
+    this.shadowRoot.querySelector("#swipedown").style.display = "none";
+  }
+ }
 }
+
 
 //MUST HAVE - define the tag for the custom elements
 customElements.define("the-swipedown", TheSwipeDown)

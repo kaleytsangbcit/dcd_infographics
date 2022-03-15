@@ -2,6 +2,7 @@
     <head>
         <title>Overfishing Infographics</title>
         <script src="comps/body.js"></script>
+        <script src="comps/fishbutton.js"></script>
         <script src="comps/banner.js"></script>
         <script src="comps/clouds.js"></script>               
         <script src="comps/boat.js"></script>
@@ -12,14 +13,12 @@
         <script src="comps/info.js"></script>
         <script src="comps/piechart.js"></script>
         <script src="comps/scrollcont.js"></script>
-
+  
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
-
-
 
         <link rel="stylesheet" href="./main.css">
         <style>
@@ -38,38 +37,36 @@
     <div id="wrapper">
 
         <the-body id="body"></the-body>
-
+    
         <div id="fishbutton">
-            <p>Tap the fish to see the Outcome of Overfishing</p>
-            <a href="/newpage.html">
-            <img alt="click to overfishing outcome" src="img/tapfish.png" ></a>
+            <the-fishbutton></the-fishbutton>
         </div>
-
+    
         <div id="title">
             <the-banner
             img="img/Banner_process.png"
             ></the-banner>
         </div>
-
+    
         <div id="clouds">
             <the-clouds
             img1="img/Cloud_01.png"
             img2="img/Cloud_02.png"
             ></the-clouds>
         </div>
-
+    
         <div id="waves">
             <the-waves
             img="img/Waves.png"
             ></the-waves>
         </div>
-
+    
         <div id="fishing_boat">
             <the-boat
             img="img/FishingBoat.png"
             ></the-boat>
         </div>
-
+    
         <the-fish
             class="gray"
             id="gray"
@@ -103,21 +100,14 @@
         <coral-healthy id="coral1">
             <img src="img/Coral_healthy.png" alt="coral1">
         </coral-healthy>
-
-        <div id="net">
-            <the-net
-            id="net_image"
-            img="img/Net.png"
-            ></the-net>
-        </div>
-
+    
         <div id="swipeup">
             <the-swipeup
             id="swipe"
             img="img/Swipeup.png"
             ></the-swipeup>
         </div>
-
+    
             
         <div id="info1">
             <the-info id="info1">
@@ -125,14 +115,14 @@
                 desc-text="Marine life population are in danger due to Overfishing">
             </the-info>
         </div>
-
+    
         <div id="info2">
             <the-info id="info2"
                 head-text=" "
                 desc-text="Marine life population are in danger due to Overfishing">
             </the-info>
         </div>
-
+    
         <div id="chart">
             <the-piechart
             img="img/piechart_55.png"
@@ -141,27 +131,33 @@
             ></the-piechart>
         </div>
 
+        <div id="net">
+            <the-net
+            id="net_image"
+            img="img/Net.png"
+            ></the-net>
+        </div>
+
+    </div>
 
 
 
 
-    
 
-        
-        <script>
-            //console.log(document.querySelector("#wrapper").offsetHeight)
-            document.body.onload = () => {
-                document.querySelector("#wrapper").scrollTop = 4760;
-    
-    
-                document.querySelector("#wrapper").onscroll = (e) => {
-                    document.querySelector("#net_image").ChangeNetPosition(e.target.scrollTop);
-                    document.querySelector("#net_image").ChangePopupPosition(e.target.scrollTop);
-                    document.querySelector("#swipe").scrollFunction();
-                }
+    <script>
+        //console.log(document.querySelector("#wrapper").offsetHeight)
+        document.body.onload = () => {
+            document.querySelector("#wrapper").scrollTop = 4760;
+
+
+            document.querySelector("#wrapper").onscroll = (e) => {
+                document.querySelector("#net_image").ChangeNetPosition(e.target.scrollTop);
+                document.querySelector("#net_image").ChangePopupPosition(e.target.scrollTop);
+                document.querySelector("#swipe").scrollFunction();
             }
-        </script>
-
+        }
+    </script>
+    
 </body>
 
 </html>

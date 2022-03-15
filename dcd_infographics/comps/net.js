@@ -44,15 +44,36 @@ template_net.innerHTML = `
         opacity: 0%;
         top: 6150px;
         left: 60px;
-        // animation: PopUp 10s linear 1 forwards;
-        // animation-delay: 2s;
+        display:flex;
+        justify-content:center;
+      }
+ 
+      #popup {
+        width:80%;
       }
 
-    //   @keyframes PopUp {
-    //     0%   {top: 6150px;}
-    //     100% {top: 2300px;}
-    //}   
+      #text {
+        width:600px;
+        font-size: 38px;
+        position: absolute;
+        top: 20px;
+        text-align: center;
+        color: #177B9B;
+      }
 
+      #text > p {
+        font-size:48px;
+        font-weight:600;
+        margin:0px;
+        color: #12637C
+      }
+
+      #close {
+        width:10%;
+        position: absolute;
+        left: 600px;
+        opacity:60%;
+      }
 
 </style>
 
@@ -61,7 +82,12 @@ template_net.innerHTML = `
     </div>
     <div id ='string'></div>
     <div id ='net_popup'>
-        <img id='popup' src='/img/Popup_net.png'/>
+        <img id='popup' src='/img/popupbox.png'/>
+        <text id='text'>
+        <p>Bycatch</p>
+        The incidental capture of species when other unwanted species are being targeted. 
+        Bycatch are either kept and landed, or discarded (thrown back to sea).</text>
+        <img id='close' src='/img/close.png'/>
     <div>
 
 `;
@@ -86,12 +112,18 @@ class TheNet extends HTMLElement {
         }
 
         this.shadowRoot.querySelector("#net_image").onclick = () => this.PopUp();
+
+        this.shadowRoot.querySelector("#close").onclick = () => this.closePopUp();
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
 
         PopUp() {
-            this.shadowRoot.querySelector("#net_popup").style.opacity = "90%";
+            this.shadowRoot.querySelector("#net_popup").style.opacity = "100%";
+        }
+
+        closePopUp() {
+            this.shadowRoot.querySelector("#net_popup").style.opacity = "0%";
         }
 
         //maket the net goes up when scrolling up

@@ -8,10 +8,27 @@ template_bannerresult.innerHTML = `
     #banner_image {
         margin: 100px auto;
         width: 80%;
+        position: absolute;
+        top:10px;
+        left:100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #banner_image img {
         width: 100%;
+    }
+
+    #text {
+        width:650px;
+        font-size: 50px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        text-align: center;
+        color: black;
     }
 
 </style>
@@ -19,6 +36,7 @@ template_bannerresult.innerHTML = `
 
 <div id='banner_image'>
         <img id='banner' src='/img/Banner_outcome.png'/>
+        <div id='text'>Overfishing - Outcome</div>
 </div>
 `;
 
