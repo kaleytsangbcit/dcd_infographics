@@ -33,7 +33,7 @@ template_chart.innerHTML = `
 
 <div id='chart_image'>
         <img id='chart' src='/img/piechart_25.png'/>
-        <div id='chartText'>text</div>
+        <div id='chartText'></div>
 </div>
 `;
 

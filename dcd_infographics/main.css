@@ -4,20 +4,26 @@ html {
 
 #info1 {
     position:absolute;
-    top:250px;
+    top:1200px;
     left:220px;
 }
 
 #info2 {
     position:absolute;
-    top:1200px;
+    top:650px;
+    left:10px;
+}
+
+#chart1 {
+    position:absolute;
+    top:4500px;
     left:50px;
 }
 
-#chart {
+#chart2 {
     position:absolute;
-    top:4000px;
-    left:50px;
+    top:1500px;
+    right:50px;
 }
 
 #coral1 {
