@@ -45,7 +45,7 @@ template_fishbutton2.innerHTML = `
         <a href="/index.html">
         <img id='fishicon' alt="click to see Overfishing Process" src="img/tapfish2.png" ></a>
         <img id='bubble' src='/img/Bubble.png'/>
-        <p>Tap me to see the Outcome of Overfishing</p>
+        <p>Tap me to see the Process of Overfishing</p>
 
 </div>
 `;
