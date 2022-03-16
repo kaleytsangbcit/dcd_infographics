@@ -134,52 +134,38 @@
 
         <div id="destruct_ex1">
             <the-destruct
+            id="destruct"
             img="img/cyanide_drawing.png"
             text="Cyanide Fishing"
+            desc="Spraying a sodium cyanide
+            mixture into the desired fish's 
+            habitat in order to incapacitate the fish. 
+            It kills corol reefs and marine life."
             ></the-destruct>
         </div>
 
         <div id="destruct_ex2">
             <the-destruct
+            id="destruct"
             img="img/blastfishing_drawing.png"
             text="Blast Fishing"
+            desc="Using explosives to stun or
+                kill schools of fish for easy collection."
             ></the-destruct>
         </div>
 
         <div id="destruct_ex3">
             <the-destruct
+            id="destruct"
             img="img/trawling_drawings.png"
             text="Bottom Trawling"
+            desc="Throwing big net into the seabed, 
+            it destroyed the seabed and then pulled
+            for the collection, they also 
+            catch unwanted fish / marine life."
             ></the-destruct>
         </div>
         
-        <div id="des_info1">
-            <the-desinfo id="des_info1"
-                id="swipe"
-                desc="Spraying a sodium cyanide <br/>
-                mixture into the desired fish's <br/>
-                habitat in order to incapacitate the fish. <br/>
-                It kills corol reefs and marine life.">
-            </the-desinfo>
-        </div>
-        
-        <div id="des_info2">
-            <the-desinfo id="des_info2"
-                id="swipe"
-                desc="Using explosives to stun or <br/>
-                kill schools of fish for easy collection.">
-            </the-desinfo>
-        </div>
-
-        <div id="des_info3">
-            <the-desinfo id="des_info3"
-                id="swipe"
-                desc="Throwing big net into the seabed, <br/>
-                it destroyed the seabed and then pulled <br/>
-                for the collection, they also <br/>
-                catch unwanted fish / marine life.">
-            </the-desinfo>
-        </div>
     </div>
 
 
@@ -192,11 +178,10 @@
 
             document.querySelector("#wrapper").onscroll = (e) => {
                 document.querySelector("#swipe").scrollFunction();
+                document.querySelector("#desinfo").scrollFunction();
+                document.querySelector("#destruct").PopUp();
+                document.querySelector("#destruct").closePopUp();
             }
-
-            // document.querySelector("#wrapper").onscroll = (e) => {
-            //     document.querySelector("#des_info").scrollFunction();
-            // }
     
     </script>
 

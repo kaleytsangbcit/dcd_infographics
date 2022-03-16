@@ -11,12 +11,12 @@ template_destruct.innerHTML = `
         display: flex;
         flex-direction: column;
         align-items: center;
-        opacity: 100%;
     }
 
-    #destruct_image img {
+    #destruct_ex {
         width: 200px;
         justify-content:center;
+        left:30px;
     }
 
     #text {
@@ -28,12 +28,47 @@ template_destruct.innerHTML = `
         color: white;
     }
 
+    #desc_popup {
+        position: absolute;
+        opacity: 100%;
+        top: 6150px;
+        left: 60px;
+        display:flex;
+        justify-content:center;
+      }
+
+    #popup {
+        width:100%;
+      }
+
+    #desc {
+        font-size: 33px;
+        text-decoration: none;
+        width: 400px;
+        top: 50px;
+        left: 50px;
+        position:absolute;
+    }
+
+    #close {
+        width:10%;
+        top:5px;
+        position: absolute;
+        left: 400px;
+        opacity:60%;
+      }
+
 </style>
 
 
 <div id='destruct_image'>
         <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
         <div id='text'>text</div>
+        <div id='desc_popup'>
+            <img id='popup' src='/img/Popupbox.png'/>  
+            <div id="desc">desc</div>
+            <img id='close' src='/img/close.png'/>
+        </div>
 </div>
 `;
 
@@ -58,15 +93,26 @@ class TheDestruct extends HTMLElement {
         if(this.getAttribute("text")){
             this.shadowRoot.querySelector("#destruct_image > #text").innerHTML = this.getAttribute("text");
         }
+
+        if(this.getAttribute("desc")){
+            this.shadowRoot.querySelector("#desc_popup > #desc").innerHTML = this.getAttribute("desc");
+        }
+
+        this.shadowRoot.querySelector("#destruct_ex").onclick = () => this.PopUp();
+
+        this.shadowRoot.querySelector("#close").onclick = () => this.closePopUp();
        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    // changeOpacity(){
-    //     this.shadowRoot.querySelector("#destruct_image").style.opacity =`
-    //     opacity 100%;
-    //     `
-    // }
+    PopUp() {
+        this.shadowRoot.querySelector("#desc_popup").style.opacity = "100%";
+    }
+
+    closePopUp() {
+        this.shadowRoot.querySelector("#desc_popup").style.opacity = "0%";
+    }
+
   
 }
 

@@ -8,7 +8,7 @@ template_swipeup.innerHTML = `
 
 
     #swipeup1{
-        right: 20px;
+        right: -40px;
         position: fixed;
         transform: scale(0.7);
         display:none;
