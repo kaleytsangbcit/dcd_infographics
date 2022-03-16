@@ -96,45 +96,26 @@ the-fish {
 
 #chart3 {
     position: absolute;
-    top:5500px;
-    right:150px;
+    top:5200px;
+    right:300px;
 
 }
 
 #destruct_ex1 {
     position:absolute;
     top: 3500px;
-    left: 700px;
+    left: 650px;
 }
 
 #destruct_ex2 {
     position:absolute;
     top: 4030px;
-    left:200px;
+    left: 750px;
 }
 
 #destruct_ex3 {
     position:absolute;
     top: 4530px;
-    left: 700px;
+    left: 650px;
 }
-
-/* 
-#des_info1 {
-    position:absolute;
-    top: 2600px;
-    left: 30px;
-}
-
-#des_info2 {
-    position:absolute;
-    top: 3125px;
-    left: 300px;
-}
-
-#des_info3 {
-    position:absolute;
-    top: 3600px;
-    left: 20px;
-} */
 

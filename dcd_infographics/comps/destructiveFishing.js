@@ -33,21 +33,22 @@ template_destruct.innerHTML = `
         position: absolute;
         opacity: 0%;
         top: 0px;
-        left: -650px;
+        left: -620px;
         display:flex;
         justify-content:center;
+        color: #177B9B;
       }
 
     #popup {
-        width:500px;
+        width:470px;
       }
 
     #desc {
         font-size: 33px;
         text-decoration: none;
         width: 400px;
-        top: 50px;
-        left: 50px;
+        top: 20px;
+        left: 20px;
         position:absolute;
     }
 
@@ -55,7 +56,7 @@ template_destruct.innerHTML = `
         width:10%;
         top:5px;
         position: absolute;
-        left: 400px;
+        left: 420px;
         opacity:60%;
       }
 
@@ -114,7 +115,7 @@ class TheDestruct extends HTMLElement {
         this.shadowRoot.querySelector("#desc_popup").style.opacity = "0%";
     }
 
-  
+ 
 }
 
 //MUST HAVE - define the tag for the custom elements
