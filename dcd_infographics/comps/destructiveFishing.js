@@ -15,16 +15,16 @@ template_destruct.innerHTML = `
     }
 
     #destruct_ex {
-        width: 200px;
+        width: 300px;
         justify-content:center;
         left:30px;
     }
 
     #text {
         width:300px;
-        font-size: 38px;
+        font-size: 37px;
         position: relative;
-        top: 20px;
+        top: -80px;
         text-align: center;
         color: white;
     }
@@ -32,8 +32,8 @@ template_destruct.innerHTML = `
     #desc_popup {
         position: absolute;
         opacity: 0%;
-        top: 30px;
-        left: -620px;
+        top: 115px;
+        left: -640px;
         display:flex;
         justify-content:center;
         color: #177B9B;
@@ -50,6 +50,7 @@ template_destruct.innerHTML = `
         top: 20px;
         left: 20px;
         position:absolute;
+        text-align: center;
     }
 
     #close {
