@@ -56,7 +56,7 @@ class TheBannerresult extends HTMLElement {
         this.shadowRoot.appendChild(template_bannerresult.content.cloneNode(true)); //use the template to make a clone
 
     if(this.getAttribute("img")){
-        this.shadowRoot.querySelector("#banner > img").src = this.getAttribute("img");
+        this.shadowRoot.querySelector("#banner_image > img").src = this.getAttribute("img");
         }
     }
 

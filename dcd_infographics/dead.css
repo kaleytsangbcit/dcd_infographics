@@ -104,19 +104,19 @@ the-fish {
 #destruct_ex1 {
     position:absolute;
     top: 3500px;
-    right: 185px;
+    left: 700px;
 }
 
 #destruct_ex2 {
     position:absolute;
     top: 4030px;
-    left: 60px;
+    left:200px;
 }
 
 #destruct_ex3 {
     position:absolute;
     top: 4530px;
-    right: 185px;
+    left: 700px;
 }
 
 /* 

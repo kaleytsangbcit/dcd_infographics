@@ -11,6 +11,7 @@ template_destruct.innerHTML = `
         display: flex;
         flex-direction: column;
         align-items: center;
+        position:absolute;
     }
 
     #destruct_ex {
@@ -31,8 +32,8 @@ template_destruct.innerHTML = `
     #desc_popup {
         position: absolute;
         opacity: 0%;
-        top: 100px;
-        left: -50px;
+        top: 0px;
+        left: -650px;
         display:flex;
         justify-content:center;
       }
@@ -98,7 +99,7 @@ class TheDestruct extends HTMLElement {
             this.shadowRoot.querySelector("#desc_popup > #desc").innerHTML = this.getAttribute("desc");
         }
 
-        this.shadowRoot.querySelector("#destruct_ex").onclick = () => this.PopUp();
+        this.shadowRoot.querySelector("#destruct_image").onclick = () => this.PopUp();
 
         this.shadowRoot.querySelector("#close").onclick = () => this.closePopUp();
        
