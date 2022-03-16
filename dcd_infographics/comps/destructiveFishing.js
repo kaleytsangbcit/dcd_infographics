@@ -32,7 +32,7 @@ template_destruct.innerHTML = `
     #desc_popup {
         position: absolute;
         opacity: 0%;
-        top: 0px;
+        top: 30px;
         left: -620px;
         display:flex;
         justify-content:center;
@@ -64,14 +64,15 @@ template_destruct.innerHTML = `
 
 
 <div id='destruct_image'>
-        <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
-        <div id='text'>text</div>
-        <div id='desc_popup'>
-            <img id='popup' src='/img/popupbox.png'/>  
-            <div id="desc">desc</div>
-            <img id='close' src='/img/close.png'/>
-        </div>
+    <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
+    <div id='text'>text</div>
 </div>
+<div id='desc_popup'>
+    <img id='popup' src='/img/popupbox.png'/>  
+    <div id="desc">desc</div>
+    <img id='close' src='/img/close.png'/>
+</div>
+
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
