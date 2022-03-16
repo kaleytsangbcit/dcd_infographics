@@ -52,9 +52,6 @@ class ScrollCont extends HTMLElement {
         if(scrollNum > 400){
             this.shadowRoot.querySelector("#scroll3").SlideRight();
         }
-        if(scrollNum > 500){
-            this.shadowRoot.querySelector("#scroll4").SlideRight();
-        }
     }
 }
 

@@ -11,6 +11,7 @@ template_destruct.innerHTML = `
         display: flex;
         flex-direction: column;
         align-items: center;
+        opacity: 100%;
     }
 
     #destruct_image img {
@@ -27,6 +28,17 @@ template_destruct.innerHTML = `
         color: white;
     }
 
+    #desc {
+        width:300px;
+        font-size: 24px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        
+    }
+
 
 </style>
 
@@ -34,6 +46,7 @@ template_destruct.innerHTML = `
 <div id='destruct_image'>
         <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
         <div id='text'>text</div>
+        <div id='desc'>text 2</div>
 </div>
 `;
 
@@ -58,13 +71,15 @@ class TheDestruct extends HTMLElement {
         if(this.getAttribute("text")){
             this.shadowRoot.querySelector("#destruct_image > #text").innerHTML = this.getAttribute("text");
         }
+        if(this.getAttribute("desc")){
+            this.shadowRoot.querySelector("#destruct_image > #desc").innerHTML = this.getAttribute("desc");
+        }
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    SlideRight(){
-        console.log("itis time to slide right")
-        this.shadowRoot.querySelector("#destruct_ex").style.cssText =`
-        left:100vw;
+    changeOpacity(){
+        this.shadowRoot.querySelector("#destruct_image").style.opacity =`
+        opacity 100%;
         `
     }
 }
