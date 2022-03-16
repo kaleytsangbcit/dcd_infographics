@@ -28,25 +28,12 @@ template_destruct.innerHTML = `
         color: white;
     }
 
-    #desc {
-        width:300px;
-        font-size: 24px;
-        position: relative;
-        top: 20px;
-        text-align: center;
-        color: white;
-        display: flex;
-        
-    }
-
-
 </style>
 
 
 <div id='destruct_image'>
         <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
         <div id='text'>text</div>
-        <div id='desc'>text 2</div>
 </div>
 `;
 
@@ -71,17 +58,16 @@ class TheDestruct extends HTMLElement {
         if(this.getAttribute("text")){
             this.shadowRoot.querySelector("#destruct_image > #text").innerHTML = this.getAttribute("text");
         }
-        if(this.getAttribute("desc")){
-            this.shadowRoot.querySelector("#destruct_image > #desc").innerHTML = this.getAttribute("desc");
-        }
+       
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    changeOpacity(){
-        this.shadowRoot.querySelector("#destruct_image").style.opacity =`
-        opacity 100%;
-        `
-    }
+    // changeOpacity(){
+    //     this.shadowRoot.querySelector("#destruct_image").style.opacity =`
+    //     opacity 100%;
+    //     `
+    // }
+  
 }
 
 //MUST HAVE - define the tag for the custom elements

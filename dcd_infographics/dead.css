@@ -119,3 +119,21 @@ the-fish {
     right: 100px;
 }
 
+#des_info1 {
+    position:absolute;
+    top: 1300px;
+    left: 300px;
+}
+
+#des_info2 {
+    position:absolute;
+    top: 1580px;
+    right: 300px;
+}
+
+#des_info3 {
+    position:absolute;
+    top: 1800px;
+    left: 300px;
+}
+
