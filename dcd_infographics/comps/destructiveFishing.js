@@ -30,15 +30,15 @@ template_destruct.innerHTML = `
 
     #desc_popup {
         position: absolute;
-        opacity: 100%;
-        top: 6150px;
-        left: 60px;
+        opacity: 0%;
+        top: 100px;
+        left: -50px;
         display:flex;
         justify-content:center;
       }
 
     #popup {
-        width:100%;
+        width:500px;
       }
 
     #desc {
@@ -65,7 +65,7 @@ template_destruct.innerHTML = `
         <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
         <div id='text'>text</div>
         <div id='desc_popup'>
-            <img id='popup' src='/img/Popupbox.png'/>  
+            <img id='popup' src='/img/popupbox.png'/>  
             <div id="desc">desc</div>
             <img id='close' src='/img/close.png'/>
         </div>
