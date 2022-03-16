@@ -8,7 +8,7 @@ template_swipedown.innerHTML = `
 
 
     #swipedown{
-        right: 0px;
+        right: -40px;
         position: fixed;
         transform: scale(0.7);
         display:none;

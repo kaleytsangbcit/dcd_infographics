@@ -9,7 +9,7 @@ template_waves.innerHTML = `
         top:1080px;
         position: absolute;
         transform: none;
-        animation: waves 10s linear infinite;
+        animation: waves 8s linear infinite;
         animation-direction: infinite;
       }
 

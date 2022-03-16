@@ -11,30 +11,69 @@ template_destruct.innerHTML = `
         display: flex;
         flex-direction: column;
         align-items: center;
-        opacity: 100%;
+        position:absolute;
     }
 
-    #destruct_image img {
-        width: 200px;
+    #destruct_ex {
+        width: 300px;
         justify-content:center;
+        left:30px;
     }
 
     #text {
         width:300px;
-        font-size: 38px;
+        font-size: 37px;
         position: relative;
-        top: 20px;
+        top: -80px;
         text-align: center;
         color: white;
     }
+
+    #desc_popup {
+        position: absolute;
+        opacity: 0%;
+        top: 115px;
+        left: -640px;
+        display:flex;
+        justify-content:center;
+        color: #177B9B;
+      }
+
+    #popup {
+        width:470px;
+      }
+
+    #desc {
+        font-size: 33px;
+        text-decoration: none;
+        width: 400px;
+        top: 20px;
+        left: 20px;
+        position:absolute;
+        text-align: center;
+    }
+
+    #close {
+        width:10%;
+        top:5px;
+        position: absolute;
+        left: 420px;
+        opacity:60%;
+      }
 
 </style>
 
 
 <div id='destruct_image'>
-        <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
-        <div id='text'>text</div>
+    <img id='destruct_ex' src='/img/cyanide_drawing.png'/>
+    <div id='text'>text</div>
 </div>
+<div id='desc_popup'>
+    <img id='popup' src='/img/popupbox.png'/>  
+    <div id="desc">desc</div>
+    <img id='close' src='/img/close.png'/>
+</div>
+
 `;
 
 //MUST HAVE - CREATE A CLASS WITH HTMLELEMENT POWERS (interfaces/functionalities)
@@ -58,16 +97,27 @@ class TheDestruct extends HTMLElement {
         if(this.getAttribute("text")){
             this.shadowRoot.querySelector("#destruct_image > #text").innerHTML = this.getAttribute("text");
         }
+
+        if(this.getAttribute("desc")){
+            this.shadowRoot.querySelector("#desc_popup > #desc").innerHTML = this.getAttribute("desc");
+        }
+
+        this.shadowRoot.querySelector("#destruct_image").onclick = () => this.PopUp();
+
+        this.shadowRoot.querySelector("#close").onclick = () => this.closePopUp();
        
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
-    // changeOpacity(){
-    //     this.shadowRoot.querySelector("#destruct_image").style.opacity =`
-    //     opacity 100%;
-    //     `
-    // }
-  
+    PopUp() {
+        this.shadowRoot.querySelector("#desc_popup").style.opacity = "100%";
+    }
+
+    closePopUp() {
+        this.shadowRoot.querySelector("#desc_popup").style.opacity = "0%";
+    }
+
+ 
 }
 
 //MUST HAVE - define the tag for the custom elements

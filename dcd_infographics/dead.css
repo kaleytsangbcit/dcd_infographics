@@ -6,7 +6,7 @@
 
 #coral1 {
     position: relative;
-    top: 5800px;
+    top: 6100px;
 
 }
 
@@ -96,44 +96,26 @@ the-fish {
 
 #chart3 {
     position: absolute;
-    top:5500px;
-    right:150px;
+    top:5200px;
+    right:300px;
 
 }
 
 #destruct_ex1 {
     position:absolute;
     top: 3500px;
-    right: 100px;
+    left: 650px;
 }
 
 #destruct_ex2 {
     position:absolute;
-    top: 4000px;
-    left: 100px;
+    top: 4030px;
+    left: 750px;
 }
 
 #destruct_ex3 {
     position:absolute;
-    top: 4500px;
-    right: 100px;
-}
-
-#des_info1 {
-    position:absolute;
-    top: 1300px;
-    left: 300px;
-}
-
-#des_info2 {
-    position:absolute;
-    top: 1580px;
-    right: 300px;
-}
-
-#des_info3 {
-    position:absolute;
-    top: 1800px;
-    left: 300px;
+    top: 4530px;
+    left: 650px;
 }
 

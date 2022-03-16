@@ -25,7 +25,7 @@ template_chart.innerHTML = `
     }
 
     #chartText span {
-        color:#FFC5C5;
+        color:#E96666;
     }
 
 </style>

@@ -12,14 +12,8 @@ template_net.innerHTML = `
         transform: none;
         top: 5200px;
         left: 150px;
-        // animation: Movingup 10s linear 1 forwards;
-        // animation-delay: 2s;
       }
 
-    //   @keyframes Movingup {
-    //     0%   {top: 5200px;}
-    //     100% {top: 1300px;}
-    // }   
 
     #string {
         position: absolute;
@@ -30,14 +24,7 @@ template_net.innerHTML = `
         left: 355px;
         content: '';
         background: black;
-        // animation: string 10s linear 1 forwards;
-        // animation-delay: 2s;
     }
-      
-    // @keyframes string {
-    //     0%      {height: 4100px;}
-    //     100%    {height: 200px;} 
-    // }
 
     #net_popup {
         position: absolute;
